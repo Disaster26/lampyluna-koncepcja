@@ -24,7 +24,6 @@
       <a href="#marki">Producenci</a>
       <a href="#wyprzedaz">Wyprzedaże</a>
       <a href="#architekci">Dla architektów</a>
-      <a href="#u-siebie">Zobacz u siebie</a>
       <a href="#kontakt">Kontakt</a>
       <form class="menu-szukaj" action="https://www.lampyluna.pl/product/search" method="get" role="search">
         <input type="search" name="query" placeholder="Szukaj lampy lub marki" aria-label="Szukaj w sklepie">
@@ -223,71 +222,6 @@
       </ul>
       <p>Jeśli przekażesz nam materiały i budżet na oświetlenie, przygotujemy dla Ciebie jego projekt.</p>
       <a class="link" href="https://www.lampyluna.pl/webpage/dla-architekta.html">Warunki współpracy</a>
-    </div>
-  </div>
-</section>
-
-<section class="sekcja u-siebie" id="u-siebie">
-  <div class="wrap">
-    <div class="naglowek">
-      <h2>Zobacz lampę u siebie</h2>
-      <p>Wgraj zdjęcie swojego pokoju albo wybierz przykładowe wnętrze, a potem przesuń i dopasuj lampę palcem lub myszą. Możesz postawić obok siebie do trzech modeli i porównać je w jednym kadrze.</p>
-    </div>
-
-    <div class="studio">
-      <div class="scena-kol">
-        <div class="scena" id="scena" tabindex="-1">
-          <canvas class="scena-canvas" id="scenaCanvas" role="img" aria-label="Wnętrze, w którym przymierzasz lampę"></canvas>
-          <div class="warstwy" id="warstwy"></div>
-          <p class="scena-podpowiedz" id="podpowiedz">Przeciągnij lampę. Góra i dół zmieniają odległość, dwa palce wielkość.</p>
-        </div>
-        <div class="narzedzia" role="toolbar" aria-label="Ustawienia lampy">
-          <label class="suwak"><span>Wielkość</span><input type="range" id="wielkosc" min="50" max="200" step="1" value="100" aria-label="Wielkość lampy"></label>
-          <label class="suwak" id="zwisBox"><span>Zwis</span><input type="range" id="zwis" min="8" max="180" step="1" value="60" aria-label="Długość zwisu lampy od sufitu"><output id="zwisWart">60 cm</output></label>
-          <button type="button" class="nb" id="odbij" aria-label="Odbij lampę w poziomie">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 7 3 12l5 5zM16 7l5 5-5 5z"/></svg><span>Odbij</span>
-          </button>
-          <button type="button" class="nb" id="wieczor" aria-pressed="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><span>Wieczorem</span>
-          </button>
-          <button type="button" class="nb" id="zapisz">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Zapisz kadr</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="krok">
-          <h3>Wnętrze</h3>
-          <div class="wnetrza" id="wnetrza">
-            <label class="wgraj">
-              <input type="file" id="plik" accept="image/*">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
-              <span>Twoje zdjęcie</span>
-            </label>
-          </div>
-          <p class="prywatnosc">Zdjęcie zostaje w Twojej przeglądarce, nigdzie go nie wysyłamy.</p>
-        </div>
-
-        <div class="krok">
-          <h3>Lampa</h3>
-          <div class="zakladki" role="tablist" id="zakladki">
-            <button role="tab" type="button" data-typ="wiszaca" aria-selected="true">Wiszące</button>
-            <button role="tab" type="button" data-typ="podlogowa" aria-selected="false">Podłogowe</button>
-            <button role="tab" type="button" data-typ="stolowa" aria-selected="false">Stołowe</button>
-          </div>
-          <div class="lampy" id="lampy" role="listbox" aria-label="Wybierz lampę"></div>
-        </div>
-
-        <div class="krok wybrane">
-          <div class="warstwy-lista" id="warstwyLista" aria-label="Lampy na zdjęciu"></div>
-          <div class="aktywna" id="aktywna" aria-live="polite"></div>
-          <div class="aktywna-cta">
-            <a class="btn" id="zapytaj" href="#">Zapytaj o tę lampę</a>
-            <a class="link" id="kup" href="#" target="_blank" rel="noopener">Kup w sklepie</a>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </section>
