@@ -364,3 +364,8 @@ p{margin:0}
   .chipy a{flex:0 0 auto}
 }
 .kafel-duzy img{object-position:50% 18%}
+
+/* 23.10: bez przymierzalni - przeplot tel na koncu strony */
+.architekci{background:var(--papier)}
+.luna{background:#fff}
+.poradnik{background:var(--papier)}
