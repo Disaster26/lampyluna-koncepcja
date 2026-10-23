@@ -258,13 +258,13 @@
     <div class="studio">
       <div class="scena-kol">
         <div class="scena" id="scena" tabindex="-1">
-          <img class="scena-tlo" id="scenaTlo" src="img/wnetrza/salon.webp" alt="Wnętrze, w którym przymierzasz lampę" draggable="false">
-          <div class="noc" id="noc" aria-hidden="true"></div>
+          <canvas class="scena-canvas" id="scenaCanvas" role="img" aria-label="Wnętrze, w którym przymierzasz lampę"></canvas>
           <div class="warstwy" id="warstwy"></div>
-          <p class="scena-podpowiedz" id="podpowiedz">Przeciągnij lampę. Dwa palce lub suwak zmieniają wielkość.</p>
+          <p class="scena-podpowiedz" id="podpowiedz">Przeciągnij lampę. Góra i dół zmieniają odległość, dwa palce wielkość.</p>
         </div>
         <div class="narzedzia" role="toolbar" aria-label="Ustawienia lampy">
-          <label class="suwak"><span>Wielkość</span><input type="range" id="wielkosc" min="6" max="90" step="0.5" value="22" aria-label="Wielkość lampy"></label>
+          <label class="suwak"><span>Wielkość</span><input type="range" id="wielkosc" min="50" max="200" step="1" value="100" aria-label="Wielkość lampy"></label>
+          <label class="suwak" id="zwisBox"><span>Zwis</span><input type="range" id="zwis" min="8" max="180" step="1" value="60" aria-label="Długość zwisu lampy od sufitu"><output id="zwisWart">60 cm</output></label>
           <button type="button" class="nb" id="odbij" aria-label="Odbij lampę w poziomie">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 7 3 12l5 5zM16 7l5 5-5 5z"/></svg><span>Odbij</span>
           </button>
