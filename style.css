@@ -78,26 +78,22 @@ p{margin:0}
 .studio{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:clamp(24px,3vw,44px);align-items:start}
 .scena-kol{min-width:0}
 .scena{position:relative;width:100%;aspect-ratio:3/2;overflow:hidden;background:#ddd5cb;margin-inline:auto;user-select:none;-webkit-user-select:none;outline:none}
-.scena-tlo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none}
-.noc{position:absolute;inset:0;background:rgba(20,16,26,.66);opacity:0;transition:opacity .5s;pointer-events:none}
-.scena.wieczor .noc{opacity:1}
-.warstwy{position:absolute;inset:0}
-.lampa{position:absolute;touch-action:none;cursor:grab;transform-origin:50% 0}
+.scena-canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.warstwy{position:absolute;inset:0;pointer-events:none}
+.lampa{position:absolute;touch-action:none;cursor:grab;pointer-events:auto}
 .lampa:active{cursor:grabbing}
-.scena.wieczor .lampa img{filter:brightness(1.1) drop-shadow(0 0 12px rgba(255,200,130,.35))}
-.lampa img{width:100%;height:100%;pointer-events:none;-webkit-user-drag:none;filter:drop-shadow(0 6px 10px rgba(40,25,10,.18))}
-.lampa.odb img{transform:scaleX(-1)}
-.lampa .kabel{position:absolute;bottom:100%;width:1.5px;transform:translateX(-50%);background:#3a3632;pointer-events:none}
-.lampa.akt::after{content:"";position:absolute;inset:-6px;border:1px dashed rgba(29,26,24,.55);pointer-events:none}
-.scena.wieczor .lampa.akt::after{border-color:rgba(255,255,255,.5)}
-.scena.zapis .lampa.akt::after{display:none}
-.blask{position:absolute;border-radius:50%;pointer-events:none;mix-blend-mode:screen;opacity:0;transition:opacity .5s;background:radial-gradient(circle,rgba(255,232,185,1) 0,rgba(255,200,125,.6) 12%,rgba(255,176,96,.26) 34%,rgba(255,160,80,.08) 52%,rgba(255,160,80,0) 70%)}
-.scena.wieczor .blask{opacity:1}
+.lampa:focus{outline:none}
+.lampa.akt::after{content:"";position:absolute;inset:-6px;border:1px dashed rgba(29,26,24,.5);pointer-events:none}
+.scena.wieczor .lampa.akt::after{border-color:rgba(255,255,255,.45)}
+.scena.bez-ramki .lampa.akt::after{display:none}
+.lampa:focus-visible::after{content:"";position:absolute;inset:-6px;border:2px solid var(--tusz)}
 .scena-podpowiedz{position:absolute;left:12px;bottom:12px;max-width:calc(100% - 24px);background:rgba(255,255,255,.92);font-size:14px;line-height:1.35;padding:8px 12px;pointer-events:none;transition:opacity .4s}
 .scena-podpowiedz.ukryj{opacity:0}
 .narzedzia{display:flex;align-items:center;gap:6px 18px;flex-wrap:wrap;margin-top:14px}
 .suwak{display:flex;align-items:center;gap:12px;flex:1 1 220px;min-width:0;font-size:15px}
 .suwak input{flex:1;min-width:0;accent-color:var(--tusz);height:30px}
+.suwak output{min-width:52px;text-align:right;font-variant-numeric:tabular-nums;color:var(--szary,#6b645d);font-size:14px}
+.suwak[hidden]{display:none}
 .nb{display:inline-flex;align-items:center;gap:7px;background:none;border:0;padding:8px 2px;cursor:pointer;font-size:15px;white-space:nowrap}
 .nb svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
 .nb:hover{color:var(--akcent)}
