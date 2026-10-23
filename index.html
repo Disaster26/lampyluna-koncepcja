@@ -22,9 +22,9 @@
     <nav class="menu" id="menu" aria-label="Menu główne">
       <a href="#kategorie">Kategorie</a>
       <a href="#marki">Producenci</a>
-      <a href="#u-siebie">Zobacz u siebie</a>
       <a href="#wyprzedaz">Wyprzedaże</a>
       <a href="#architekci">Dla architektów</a>
+      <a href="#u-siebie">Zobacz u siebie</a>
       <a href="#kontakt">Kontakt</a>
       <form class="menu-szukaj" action="https://www.lampyluna.pl/product/search" method="get" role="search">
         <input type="search" name="query" placeholder="Szukaj lampy lub marki" aria-label="Szukaj w sklepie">
@@ -61,75 +61,10 @@
     <h1>Lampy, które zostają w&nbsp;domu na lata</h1>
     <p class="lead">FLOS, Artemide, Foscarini, Moooi, Marset i ponad 50 innych marek. Pomagamy dobrać oprawę, a jeśli czegoś nie ma w sklepie, sprowadzimy ją od producenta.</p>
     <div class="hero-cta">
-      <a class="btn" href="#u-siebie" id="heroCta">Zobacz lampę u siebie</a>
+      <a class="btn" href="#kategorie" id="heroCta">Przeglądaj lampy</a>
       <a class="link" href="#wyprzedaz">Wyprzedaż stanów magazynowych</a>
     </div>
     <p class="hero-info">Darmowa dostawa DPD lub odbiór osobisty we Wrocławiu</p>
-  </div>
-</section>
-
-<section class="sekcja u-siebie" id="u-siebie">
-  <div class="wrap">
-    <div class="naglowek">
-      <h2>Zobacz lampę u siebie</h2>
-      <p>Wgraj zdjęcie swojego pokoju albo wybierz przykładowe wnętrze, a potem przesuń i dopasuj lampę palcem lub myszą. Możesz postawić obok siebie do trzech modeli i porównać je w jednym kadrze.</p>
-    </div>
-
-    <div class="studio">
-      <div class="scena-kol">
-        <div class="scena" id="scena" tabindex="-1">
-          <img class="scena-tlo" id="scenaTlo" src="img/wnetrza/salon.webp" alt="Wnętrze, w którym przymierzasz lampę" draggable="false">
-          <div class="noc" id="noc" aria-hidden="true"></div>
-          <div class="warstwy" id="warstwy"></div>
-          <p class="scena-podpowiedz" id="podpowiedz">Przeciągnij lampę. Dwa palce lub suwak zmieniają wielkość.</p>
-        </div>
-        <div class="narzedzia" role="toolbar" aria-label="Ustawienia lampy">
-          <label class="suwak"><span>Wielkość</span><input type="range" id="wielkosc" min="6" max="90" step="0.5" value="22" aria-label="Wielkość lampy"></label>
-          <button type="button" class="nb" id="odbij" aria-label="Odbij lampę w poziomie">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 7 3 12l5 5zM16 7l5 5-5 5z"/></svg><span>Odbij</span>
-          </button>
-          <button type="button" class="nb" id="wieczor" aria-pressed="false">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><span>Wieczorem</span>
-          </button>
-          <button type="button" class="nb" id="zapisz">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Zapisz kadr</span>
-          </button>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="krok">
-          <h3>Wnętrze</h3>
-          <div class="wnetrza" id="wnetrza">
-            <label class="wgraj">
-              <input type="file" id="plik" accept="image/*">
-              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
-              <span>Twoje zdjęcie</span>
-            </label>
-          </div>
-          <p class="prywatnosc">Zdjęcie zostaje w Twojej przeglądarce, nigdzie go nie wysyłamy.</p>
-        </div>
-
-        <div class="krok">
-          <h3>Lampa</h3>
-          <div class="zakladki" role="tablist" id="zakladki">
-            <button role="tab" type="button" data-typ="wiszaca" aria-selected="true">Wiszące</button>
-            <button role="tab" type="button" data-typ="podlogowa" aria-selected="false">Podłogowe</button>
-            <button role="tab" type="button" data-typ="stolowa" aria-selected="false">Stołowe</button>
-          </div>
-          <div class="lampy" id="lampy" role="listbox" aria-label="Wybierz lampę"></div>
-        </div>
-
-        <div class="krok wybrane">
-          <div class="warstwy-lista" id="warstwyLista" aria-label="Lampy na zdjęciu"></div>
-          <div class="aktywna" id="aktywna" aria-live="polite"></div>
-          <div class="aktywna-cta">
-            <a class="btn" id="zapytaj" href="#">Zapytaj o tę lampę</a>
-            <a class="link" id="kup" href="#" target="_blank" rel="noopener">Kup w sklepie</a>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -313,6 +248,71 @@
   </div>
 </section>
 
+<section class="sekcja u-siebie" id="u-siebie">
+  <div class="wrap">
+    <div class="naglowek">
+      <h2>Zobacz lampę u siebie</h2>
+      <p>Wgraj zdjęcie swojego pokoju albo wybierz przykładowe wnętrze, a potem przesuń i dopasuj lampę palcem lub myszą. Możesz postawić obok siebie do trzech modeli i porównać je w jednym kadrze.</p>
+    </div>
+
+    <div class="studio">
+      <div class="scena-kol">
+        <div class="scena" id="scena" tabindex="-1">
+          <img class="scena-tlo" id="scenaTlo" src="img/wnetrza/salon.webp" alt="Wnętrze, w którym przymierzasz lampę" draggable="false">
+          <div class="noc" id="noc" aria-hidden="true"></div>
+          <div class="warstwy" id="warstwy"></div>
+          <p class="scena-podpowiedz" id="podpowiedz">Przeciągnij lampę. Dwa palce lub suwak zmieniają wielkość.</p>
+        </div>
+        <div class="narzedzia" role="toolbar" aria-label="Ustawienia lampy">
+          <label class="suwak"><span>Wielkość</span><input type="range" id="wielkosc" min="6" max="90" step="0.5" value="22" aria-label="Wielkość lampy"></label>
+          <button type="button" class="nb" id="odbij" aria-label="Odbij lampę w poziomie">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 7 3 12l5 5zM16 7l5 5-5 5z"/></svg><span>Odbij</span>
+          </button>
+          <button type="button" class="nb" id="wieczor" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><span>Wieczorem</span>
+          </button>
+          <button type="button" class="nb" id="zapisz">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Zapisz kadr</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="krok">
+          <h3>Wnętrze</h3>
+          <div class="wnetrza" id="wnetrza">
+            <label class="wgraj">
+              <input type="file" id="plik" accept="image/*">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              <span>Twoje zdjęcie</span>
+            </label>
+          </div>
+          <p class="prywatnosc">Zdjęcie zostaje w Twojej przeglądarce, nigdzie go nie wysyłamy.</p>
+        </div>
+
+        <div class="krok">
+          <h3>Lampa</h3>
+          <div class="zakladki" role="tablist" id="zakladki">
+            <button role="tab" type="button" data-typ="wiszaca" aria-selected="true">Wiszące</button>
+            <button role="tab" type="button" data-typ="podlogowa" aria-selected="false">Podłogowe</button>
+            <button role="tab" type="button" data-typ="stolowa" aria-selected="false">Stołowe</button>
+          </div>
+          <div class="lampy" id="lampy" role="listbox" aria-label="Wybierz lampę"></div>
+        </div>
+
+        <div class="krok wybrane">
+          <div class="warstwy-lista" id="warstwyLista" aria-label="Lampy na zdjęciu"></div>
+          <div class="aktywna" id="aktywna" aria-live="polite"></div>
+          <div class="aktywna-cta">
+            <a class="btn" id="zapytaj" href="#">Zapytaj o tę lampę</a>
+            <a class="link" id="kup" href="#" target="_blank" rel="noopener">Kup w sklepie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="sekcja luna" id="o-nas">
   <div class="wrap luna-in">
     <div class="luna-tekst">
@@ -394,7 +394,7 @@
 
 <div class="mob" id="mob" aria-hidden="true">
   <a href="tel:+48534121800" tabindex="-1">Zadzwoń</a>
-  <a class="mob-cta" href="#u-siebie" tabindex="-1">Zobacz u siebie</a>
+  <a class="mob-cta" href="#kategorie" tabindex="-1">Przeglądaj lampy</a>
 </div>
 
 <script src="app.js"></script>
