@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Lampy Luna - markowe oświetlenie designerskie, Wrocław</title>
+<meta name="description" content="FLOS, Artemide, Foscarini, Moooi, Marset, Gubi i ponad 50 innych marek. Sprawdź, jak lampa wygląda w Twoim wnętrzu. Dostawa gratis, doradztwo telefoniczne 8-20.">
+<meta name="theme-color" content="#ffffff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@400;500&display=swap&subset=latin-ext" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="img/favicon.png">
+</head>
+<body>
+<!-- Wizualizacja koncepcyjna nowej strony glownej lampyluna.pl. Produkty, ceny i zdjecia produktow pochodza ze sklepu lampyluna.pl (stan 23.10.2026). Przykladowe wnetrza w narzedziu "Zobacz u siebie" sa pogladowe (wygenerowane). -->
+
+<header class="top" id="top">
+  <div class="wrap top-in">
+    <a class="logo" href="#top" aria-label="Lampy Luna - strona główna"><img src="img/logo.png" alt="Lampy Luna" width="339" height="81"></a>
+    <nav class="menu" id="menu" aria-label="Menu główne">
+      <a href="#kategorie">Kategorie</a>
+      <a href="#marki">Producenci</a>
+      <a href="#u-siebie">Zobacz u siebie</a>
+      <a href="#wyprzedaz">Wyprzedaże</a>
+      <a href="#architekci">Dla architektów</a>
+      <a href="#kontakt">Kontakt</a>
+      <form class="menu-szukaj" action="https://www.lampyluna.pl/product/search" method="get" role="search">
+        <input type="search" name="query" placeholder="Szukaj lampy lub marki" aria-label="Szukaj w sklepie">
+      </form>
+    </nav>
+    <div class="top-akcje">
+      <button class="ikona" id="szukajBtn" type="button" aria-label="Szukaj" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+      </button>
+      <a class="ikona" href="https://www.lampyluna.pl/basket/index" aria-label="Koszyk w sklepie">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg>
+      </a>
+      <a class="tel-top" href="tel:+48534121800" aria-label="Zadzwoń 534 121 800">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 3.5h3l1.5 4-2 1.3a11 11 0 0 0 6.1 6.1l1.3-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2z"/></svg>
+        <span>534 121 800</span>
+      </a>
+      <button class="ikona burger" id="burger" type="button" aria-label="Otwórz menu" aria-expanded="false" aria-controls="menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+  <form class="szukaj-pasek" id="szukajPasek" action="https://www.lampyluna.pl/product/search" method="get" role="search" hidden>
+    <div class="wrap"><input type="search" name="query" placeholder="Szukaj lampy, np. Tolomeo, Gregg, kinkiet" aria-label="Szukaj w sklepie"><button type="submit">Szukaj</button></div>
+  </form>
+</header>
+
+<main>
+<section class="hero">
+  <figure class="hero-foto">
+    <img src="img/hero-multilite.webp" alt="Lampy wiszące Gubi Multi-Lite w trzech wykończeniach" width="1400" height="1314" fetchpriority="high">
+    <figcaption><a href="https://www.lampyluna.pl/gubi-multi-lite-pendant-brass-base-lampa-wiszaca-kolory.html">Gubi Multi-Lite <span>4 183 zł</span></a></figcaption>
+  </figure>
+  <div class="hero-in">
+    <h1>Lampy, które zostają w&nbsp;domu na lata</h1>
+    <p class="lead">FLOS, Artemide, Foscarini, Moooi, Marset i ponad 50 innych marek. Pomagamy dobrać oprawę, a jeśli czegoś nie ma w sklepie, sprowadzimy ją od producenta.</p>
+    <div class="hero-cta">
+      <a class="btn" href="#u-siebie" id="heroCta">Zobacz lampę u siebie</a>
+      <a class="link" href="#wyprzedaz">Wyprzedaż stanów magazynowych</a>
+    </div>
+    <p class="hero-info">Darmowa dostawa DPD lub odbiór osobisty we Wrocławiu</p>
+  </div>
+</section>
+
+<section class="sekcja u-siebie" id="u-siebie">
+  <div class="wrap">
+    <div class="naglowek">
+      <h2>Zobacz lampę u siebie</h2>
+      <p>Wgraj zdjęcie swojego pokoju albo wybierz przykładowe wnętrze, a potem przesuń i dopasuj lampę palcem lub myszą. Możesz postawić obok siebie do trzech modeli i porównać je w jednym kadrze.</p>
+    </div>
+
+    <div class="studio">
+      <div class="scena-kol">
+        <div class="scena" id="scena" tabindex="-1">
+          <img class="scena-tlo" id="scenaTlo" src="img/wnetrza/salon.webp" alt="Wnętrze, w którym przymierzasz lampę" draggable="false">
+          <div class="noc" id="noc" aria-hidden="true"></div>
+          <div class="warstwy" id="warstwy"></div>
+          <p class="scena-podpowiedz" id="podpowiedz">Przeciągnij lampę. Dwa palce lub suwak zmieniają wielkość.</p>
+        </div>
+        <div class="narzedzia" role="toolbar" aria-label="Ustawienia lampy">
+          <label class="suwak"><span>Wielkość</span><input type="range" id="wielkosc" min="6" max="90" step="0.5" value="22" aria-label="Wielkość lampy"></label>
+          <button type="button" class="nb" id="odbij" aria-label="Odbij lampę w poziomie">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 7 3 12l5 5zM16 7l5 5-5 5z"/></svg><span>Odbij</span>
+          </button>
+          <button type="button" class="nb" id="wieczor" aria-pressed="false">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><span>Wieczorem</span>
+          </button>
+          <button type="button" class="nb" id="zapisz">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7.5 10.5 12 15l4.5-4.5M5 19.5h14"/></svg><span>Zapisz kadr</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="krok">
+          <h3>Wnętrze</h3>
+          <div class="wnetrza" id="wnetrza">
+            <label class="wgraj">
+              <input type="file" id="plik" accept="image/*">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l1.5-2h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.5"/></svg>
+              <span>Twoje zdjęcie</span>
+            </label>
+          </div>
+          <p class="prywatnosc">Zdjęcie zostaje w Twojej przeglądarce, nigdzie go nie wysyłamy.</p>
+        </div>
+
+        <div class="krok">
+          <h3>Lampa</h3>
+          <div class="zakladki" role="tablist" id="zakladki">
+            <button role="tab" type="button" data-typ="wiszaca" aria-selected="true">Wiszące</button>
+            <button role="tab" type="button" data-typ="podlogowa" aria-selected="false">Podłogowe</button>
+            <button role="tab" type="button" data-typ="stolowa" aria-selected="false">Stołowe</button>
+          </div>
+          <div class="lampy" id="lampy" role="listbox" aria-label="Wybierz lampę"></div>
+        </div>
+
+        <div class="krok wybrane">
+          <div class="warstwy-lista" id="warstwyLista" aria-label="Lampy na zdjęciu"></div>
+          <div class="aktywna" id="aktywna" aria-live="polite"></div>
+          <div class="aktywna-cta">
+            <a class="btn" id="zapytaj" href="#">Zapytaj o tę lampę</a>
+            <a class="link" id="kup" href="#" target="_blank" rel="noopener">Kup w sklepie</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja kategorie" id="kategorie">
+  <div class="wrap">
+    <div class="naglowek">
+      <h2>Szukaj po pomieszczeniu albo rodzaju lampy</h2>
+    </div>
+    <div class="indeks">
+      <div class="indeks-kol">
+        <h3>Pomieszczenia</h3>
+        <ul>
+          <li><a href="https://www.lampyluna.pl/category/pomieszczenia-do-jadalni">Do jadalni</a></li>
+          <li><a href="https://www.lampyluna.pl/category/pomieszczenia-do-sypialni">Do sypialni</a></li>
+          <li><a href="https://www.lampyluna.pl/category/pomieszczenia-do-pokoju-i-biura">Do pokoju i biura</a></li>
+          <li><a href="https://www.lampyluna.pl/category/pomieszczenia-do-kuchni">Do kuchni</a></li>
+          <li><a href="https://www.lampyluna.pl/category/kategorie-lazienka">Do łazienki</a></li>
+          <li><a href="https://www.lampyluna.pl/category/pomieszczenia-do-korytarza">Do korytarza</a></li>
+          <li><a href="https://www.lampyluna.pl/category/lampy-na-taras">Na taras i do ogrodu</a></li>
+        </ul>
+      </div>
+      <div class="indeks-kol">
+        <h3>Rodzaje lamp</h3>
+        <ul>
+          <li><a href="https://www.lampyluna.pl/category/lampy-wiszace">Lampy wiszące</a></li>
+          <li><a href="https://www.lampyluna.pl/category/lampy-podlogowe">Lampy podłogowe</a></li>
+          <li><a href="https://www.lampyluna.pl/category/lampy-stolowe">Lampy stołowe</a></li>
+          <li><a href="https://www.lampyluna.pl/category/lampy-biurkowe">Lampy biurkowe</a></li>
+          <li><a href="https://www.lampyluna.pl/category/kinkiety">Kinkiety</a></li>
+          <li><a href="https://www.lampyluna.pl/category/plafony">Plafony</a></li>
+          <li><a href="https://www.lampyluna.pl/category/zyrandowe">Żyrandole</a></li>
+        </ul>
+      </div>
+      <div class="indeks-kol">
+        <h3>Styl i dodatki</h3>
+        <ul>
+          <li><a href="https://www.lampyluna.pl/category/styl-lampy-nowoczesne">Nowoczesne</a></li>
+          <li><a href="https://www.lampyluna.pl/category/styl-lampy-klasyczne">Klasyczne</a></li>
+          <li><a href="https://www.lampyluna.pl/category/styl-lampy-industrialne">Industrialne</a></li>
+          <li><a href="https://www.lampyluna.pl/category/kategorie-ekskluzywne-oprawy-led">Oświetlenie LED</a></li>
+          <li><a href="https://www.lampyluna.pl/category/oprawy-stropowe">Oprawy stropowe</a></li>
+          <li><a href="https://www.lampyluna.pl/category/abazury-tolomeo">Abażury Artemide Tolomeo</a></li>
+          <li><a href="https://www.lampyluna.pl/category/zrodla-swiatla-">Źródła światła</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja marki" id="marki">
+  <div class="wrap">
+    <div class="naglowek naglowek-wiersz">
+      <h2>Marki, które prowadzimy</h2>
+      <a class="link" href="https://www.lampyluna.pl/manufacturer/flos">Wszyscy producenci</a>
+    </div>
+    <ul class="marki-lista">
+      <li><a href="https://www.lampyluna.pl/manufacturer/flos">FLOS</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/artemide">Artemide</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/foscarini">Foscarini</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/moooi">Moooi</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/marset">Marset</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/gubi">Gubi</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/catellani-smith">Catellani&amp;Smith</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/vistosi">Vistosi</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/lee-broom">Lee Broom</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/anglepoise">Anglepoise</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/fontana-arte">Fontana Arte</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/luce-plan">Luceplan</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/nemo">Nemo</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/fabbian">Fabbian</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/studio-italia-design">Lodes</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/bover">Bover</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/petite-friture">Petite Friture</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/btc">Original BTC</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/a-v-mazzega">Mazzega1946</a></li>
+      <li><a href="https://www.lampyluna.pl/manufacturer/rotaliana">Rotaliana</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekcja kolekcja" id="kolekcja">
+  <div class="wrap">
+    <div class="naglowek naglowek-wiersz">
+      <h2>Wybrane z kolekcji</h2>
+      <a class="link" href="https://www.lampyluna.pl/category/towar-na-stanie-">Lampy dostępne od ręki</a>
+    </div>
+    <div class="galeria">
+      <a class="prod duzy" href="https://www.lampyluna.pl/foscarini-twiggy-lampa-podlogowa-wielkosci-kolory.html">
+        <span class="prod-foto"><img src="img/twiggy.webp" alt="Lampa podłogowa Foscarini Twiggy w salonie z widokiem na morze" loading="lazy" width="1400" height="933"></span>
+        <span class="prod-opis"><span class="marka">Foscarini</span><span class="nazwa">Twiggy, lampa podłogowa</span><span class="cena">6 270 zł</span></span>
+      </a>
+      <a class="prod" href="https://www.lampyluna.pl/moooi-bell-lamps-s-suspension-lampa-wiszaca-kolory.html">
+        <span class="prod-foto jasne"><img src="img/bell.webp" alt="Lampa wisząca Moooi Bell Lamp" loading="lazy" width="781" height="817"></span>
+        <span class="prod-opis"><span class="marka">Moooi</span><span class="nazwa">Bell Lamp Small, lampa wisząca</span><span class="cena">3 423 zł</span></span>
+      </a>
+      <a class="prod" href="https://www.lampyluna.pl/original-1227-kolorowa-lampa-biurkowa.html">
+        <span class="prod-foto"><img src="img/anglepoise.webp" alt="Lampa biurkowa Anglepoise Original 1227 na tle białej cegły" loading="lazy" width="900" height="900"></span>
+        <span class="prod-opis"><span class="marka">Anglepoise</span><span class="nazwa">Original 1227, lampa na biurko</span><span class="cena">1 144 zł</span></span>
+      </a>
+      <a class="prod" href="https://www.lampyluna.pl/lee-broom-fulcrum-pendant-led-lampa-wiszaca-kolory.html">
+        <span class="prod-foto jasne"><img src="img/fulcrum.webp" alt="Lampy wiszące Lee Broom Fulcrum w mosiądzu i chromie" loading="lazy" width="648" height="1284"></span>
+        <span class="prod-opis"><span class="marka">Lee Broom</span><span class="nazwa">Fulcrum Pendant LED</span><span class="cena">2 188 zł</span></span>
+      </a>
+      <a class="prod" href="https://www.lampyluna.pl/flos-265-265-small-kinkiet-kolory-wielkosci.html">
+        <span class="prod-foto"><img src="img/flos265.webp" alt="Kinkiet FLOS 265 z długim ramieniem nad stołem" loading="lazy" width="1000" height="782"></span>
+        <span class="prod-opis"><span class="marka">FLOS</span><span class="nazwa">265, kinkiet</span><span class="cena">4 325 zł</span></span>
+      </a>
+      <a class="prod duzy" href="https://www.lampyluna.pl/moooi-dandelion-lampa-wiszaca.html">
+        <span class="prod-foto"><img src="img/dandelion.webp" alt="Lampa wisząca Moooi Dandelion nad stołem w jadalni" loading="lazy" width="1300" height="985"></span>
+        <span class="prod-opis"><span class="marka">Moooi</span><span class="nazwa">Dandelion Suspended, lampa wisząca</span><span class="cena">11 203 zł</span></span>
+      </a>
+      <a class="prod" href="https://www.lampyluna.pl/foscarini-gregg-lampa-podlogowa-wielkosci.html">
+        <span class="prod-foto jasne"><img src="img/gregg.webp" alt="Lampy podłogowe Foscarini Gregg w trzech wysokościach" loading="lazy" width="948" height="656"></span>
+        <span class="prod-opis"><span class="marka">Foscarini</span><span class="nazwa">Gregg, lampa podłogowa</span><span class="cena">2 983 zł</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja wyprzedaz" id="wyprzedaz">
+  <div class="wrap">
+    <div class="naglowek naglowek-wiersz">
+      <div>
+        <h2>Wyprzedaż stanów magazynowych</h2>
+        <p>To pełnowartościowe lampy z naszego magazynu, nie egzemplarze uszkodzone. Wysyłamy je od razu.</p>
+      </div>
+    </div>
+    <nav class="wyprz-linki" aria-label="Działy wyprzedaży">
+      <a href="https://www.lampyluna.pl/category/40">Rabat 40%</a>
+      <a href="https://www.lampyluna.pl/category/60">Rabat 60%</a>
+      <a href="https://www.lampyluna.pl/category/wszystko-po-150-zl">Wszystko do 150 zł</a>
+      <a href="https://www.lampyluna.pl/category/towar-na-stanie-">W magazynie</a>
+      <a href="https://www.lampyluna.pl/category/wyprzedaze-przecena-lamp-axo-light">Axo Light</a>
+    </nav>
+    <div class="wyprz-rzad">
+      <a class="wp" href="https://www.lampyluna.pl/ball-polysk-lampa-wiszaca-kolory.html">
+        <span class="wp-foto"><img src="img/w-ball_2.webp" alt="Lampa wisząca Frandsen Ball, pomarańczowa" loading="lazy"></span>
+        <span class="marka">Frandsen</span><span class="nazwa">Ball Pendant, połysk</span>
+        <span class="cena"><s>260 zł</s> 150 zł</span>
+      </a>
+      <a class="wp" href="https://www.lampyluna.pl/duo-maxi-kolorowa-lampa-wiszaca.html">
+        <span class="wp-foto"><img src="img/w-duo_0.webp" alt="Lampa wisząca Anglepoise Duo Maxi Pendant w chromie" loading="lazy"></span>
+        <span class="marka">Anglepoise</span><span class="nazwa">Duo Maxi Pendant, chrom</span>
+        <span class="cena"><s>1 130 zł</s> 764 zł</span>
+      </a>
+      <a class="wp" href="https://www.lampyluna.pl/axo-light-stilla-kinkiet-kolory.html">
+        <span class="wp-foto"><img src="img/w-stilla_0.webp" alt="Kinkiet Axo Light Stilla" loading="lazy"></span>
+        <span class="marka">Axo Light</span><span class="nazwa">Stilla, kinkiet LED</span>
+        <span class="cena"><s>1 289 zł</s> 486 zł</span>
+      </a>
+      <a class="wp" href="https://www.lampyluna.pl/lumina-moove-mono-15-lampa-wiszaca.html">
+        <span class="wp-foto"><img src="img/w-moove_0.webp" alt="Lampa wisząca Lumina Moove Mono 15" loading="lazy"></span>
+        <span class="marka">Lumina</span><span class="nazwa">Moove Mono 15, lampa wisząca</span>
+        <span class="cena"><s>1 170 zł</s> 698 zł</span>
+      </a>
+      <a class="wp" href="https://www.lampyluna.pl/studio-italia-design-mania-so1-lampa-wiszaca.html">
+        <span class="wp-foto"><img src="img/w-mania_1.webp" alt="Lampa wisząca Lodes Mania" loading="lazy"></span>
+        <span class="marka">Lodes</span><span class="nazwa">Mania Suspension SO1</span>
+        <span class="cena"><s>1 127 zł</s> 476 zł</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja architekci" id="architekci">
+  <div class="wrap arch">
+    <figure class="arch-foto"><img src="img/architekci.webp" alt="Lampa Marset Ginger na biurku w pracowni projektowej" loading="lazy" width="1240" height="826"></figure>
+    <div class="arch-tekst">
+      <h2>Dla architektów i projektantów wnętrz</h2>
+      <p>Współpracujemy z architektami, którzy szukają dla klientów lamp łączących praktyczność z artyzmem. Proponujemy:</p>
+      <ul class="lista">
+        <li>lampy najlepszych marek polskich, włoskich i hiszpańskich,</li>
+        <li>elastyczną ofertę i warunki prowizyjne,</li>
+        <li>negocjację cen przy kompleksowych zamówieniach,</li>
+        <li>katalogi i projekty 3D,</li>
+        <li>wypożyczenie lamp, żeby klient mógł podjąć decyzję.</li>
+      </ul>
+      <p>Jeśli przekażesz nam materiały i budżet na oświetlenie, przygotujemy dla Ciebie jego projekt.</p>
+      <a class="link" href="https://www.lampyluna.pl/webpage/dla-architekta.html">Warunki współpracy</a>
+    </div>
+  </div>
+</section>
+
+<section class="sekcja luna" id="o-nas">
+  <div class="wrap luna-in">
+    <div class="luna-tekst">
+      <h2>Nie znalazłeś lampy, której szukasz?</h2>
+      <p>Współpracujemy ze wszystkimi czołowymi producentami oświetlenia w Europie i sprowadzimy wymarzoną lampę w atrakcyjnej cenie. Na zapytanie przygotujemy charakterystykę oprawy i odpowiemy na pytania o jej parametry. Wzory, które są na stanie, można wypożyczyć, żeby zobaczyć je u siebie przed zakupem.</p>
+      <p>W branży oświetleniowej pracujemy rodzinnie od 40 lat. Wiele lamp z naszej oferty klienci poznawali wcześniej w sklepach stacjonarnych przy ul. Odrzańskiej i ul. Ostrowskiego we Wrocławiu.</p>
+    </div>
+    <blockquote class="cytat">
+      <p>Bardzo dobrze znam produkty znajdujące się w ofercie sklepu. Jestem nie tylko handlowcem, ale po prostu wielką miłośniczką pięknych, unikatowych lamp.</p>
+      <footer>Halina Rudkiewicz, Lampy Luna</footer>
+      <a class="tel-duzy" href="tel:+48534121800">534 121 800</a>
+      <span class="godz">Dzwoń w godzinach 8-20</span>
+    </blockquote>
+  </div>
+</section>
+
+<section class="sekcja poradnik" id="poradnik">
+  <div class="wrap">
+    <div class="naglowek naglowek-wiersz">
+      <h2>Z poradnika</h2>
+      <a class="link" href="https://www.lampyluna.pl/blog/mam-wlasciwie-mieszkanie-uzadzone-ale">Wszystkie wpisy</a>
+    </div>
+    <div class="wpisy">
+      <a class="wpis" href="https://www.lampyluna.pl/blog/mam-wlasciwie-mieszkanie-uzadzone-ale">
+        <span class="wpis-foto"><img src="img/blog-abazur.webp" alt="Lampa stołowa z czerwonym abażurem" loading="lazy"></span>
+        <span class="wpis-data">16.09.2026</span>
+        <span class="wpis-tytul">Mam właściwie mieszkanie urządzone, ale...</span>
+        <span class="wpis-zajawka">Prosty trik na zmianę: wymień abażury lamp przenośnych na większe, w wyrazistym kolorze i innym kształcie.</span>
+      </a>
+      <a class="wpis" href="https://www.lampyluna.pl/blog/chcesz-zmian-uzyj-magnesu">
+        <span class="wpis-foto"><img src="img/blog-nod.webp" alt="Lampa wisząca Milan Nod z kloszem na magnesie" loading="lazy"></span>
+        <span class="wpis-data">30.01.2019</span>
+        <span class="wpis-tytul">Chcesz zmian? Użyj magnesu</span>
+        <span class="wpis-zajawka">W lampie Nod magnes zmienia położenie klosza i kierunek padania światła.</span>
+      </a>
+      <a class="wpis" href="https://www.lampyluna.pl/blog/nowe-kolory-w-ofertach-37">
+        <span class="wpis-foto"><img src="img/blog-kolory.webp" alt="Lampa wisząca w kolorze miedzi" loading="lazy"></span>
+        <span class="wpis-data">30.01.2019</span>
+        <span class="wpis-tytul">Nowe kolory w ofertach</span>
+        <span class="wpis-zajawka">Czerń, biel i szarości zostają, ale obok nich coraz częściej pojawia się brąz i miedź.</span>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="stopka" id="kontakt">
+  <div class="wrap stopka-in">
+    <div class="st-kol st-firma">
+      <img src="img/logo.png" alt="Lampy Luna" width="339" height="81" loading="lazy">
+      <p>Firma Handlowa Luna<br>Halina Rudkiewicz<br>ul. Danuty Siedzikówny 89<br>51-214 Wrocław</p>
+    </div>
+    <div class="st-kol">
+      <h3>Kontakt</h3>
+      <p><a href="tel:+48534121800">534 121 800</a><br>w godzinach 8-20</p>
+      <p><a href="mailto:halina.rudkiewicz@o2.pl">halina.rudkiewicz@o2.pl</a></p>
+    </div>
+    <div class="st-kol">
+      <h3>Zakupy</h3>
+      <p>Dostawa 0 zł, kurier DPD albo odbiór osobisty we Wrocławiu. Lampy z magazynu wysyłamy w 1 dzień roboczy, sprowadzane na zamówienie w 4-8 tygodni.</p>
+      <p>Przelew, Przelewy24 lub karta Visa / Mastercard.</p>
+    </div>
+    <div class="st-kol">
+      <h3>Informacje</h3>
+      <ul>
+        <li><a href="https://www.lampyluna.pl/webpage/dlaczego-luna.html">O nas</a></li>
+        <li><a href="https://www.lampyluna.pl/webpage/faq.html">FAQ</a></li>
+        <li><a href="https://www.lampyluna.pl/webpage/koszty-dostawy.html">Dostawa</a></li>
+        <li><a href="https://www.lampyluna.pl/webpage/zwroty.html">Zwroty</a></li>
+        <li><a href="https://www.lampyluna.pl/webpage/reklamacje.html">Reklamacje</a></li>
+        <li><a href="https://www.lampyluna.pl/webpage/regulamin.html">Regulamin</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap stopka-dol">
+    <p>Wizualizacja koncepcyjna nowej strony głównej. Produkty, zdjęcia i ceny pochodzą ze sklepu lampyluna.pl (23.10.2026), przykładowe wnętrza w przymierzalni są poglądowe.</p>
+  </div>
+</footer>
+
+<div class="mob" id="mob" aria-hidden="true">
+  <a href="tel:+48534121800" tabindex="-1">Zadzwoń</a>
+  <a class="mob-cta" href="#u-siebie" tabindex="-1">Zobacz u siebie</a>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
