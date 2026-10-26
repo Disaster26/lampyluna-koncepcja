@@ -26,4 +26,27 @@
       mob.querySelectorAll('a').forEach(a => a.tabIndex = pokaz ? 0 : -1);
     }).observe(heroCta);
   }
+
+  /* ---------- rzedy mebli i dekoracji: strzalki na komputerze ---------- */
+  const strz = d => `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
+  document.querySelectorAll('.dek-rzad').forEach(rz => {
+    const tasma = rz.querySelector('.dek-tasma'), gl = rz.querySelector('.dek-rzad-gl');
+    const ster = document.createElement('div');
+    ster.className = 'ster';
+    ster.innerHTML = `<button type="button" aria-label="Poprzednie produkty">${strz('M15 5l-7 7 7 7')}</button><button type="button" aria-label="Następne produkty">${strz('M9 5l7 7-7 7')}</button>`;
+    gl.insertBefore(ster, gl.querySelector('.link'));
+    const [wst, dal] = ster.querySelectorAll('button');
+    const krok = () => tasma.clientWidth * 0.8;
+    wst.addEventListener('click', () => tasma.scrollBy({ left: -krok(), behavior: 'smooth' }));
+    dal.addEventListener('click', () => tasma.scrollBy({ left: krok(), behavior: 'smooth' }));
+    const stan = () => {
+      const max = tasma.scrollWidth - tasma.clientWidth - 2;
+      wst.disabled = tasma.scrollLeft <= 2;
+      dal.disabled = tasma.scrollLeft >= max;
+      ster.hidden = max <= 0;
+    };
+    tasma.addEventListener('scroll', stan, { passive: true });
+    window.addEventListener('resize', stan);
+    stan();
+  });
 })();

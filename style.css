@@ -369,3 +369,119 @@ p{margin:0}
 .architekci{background:var(--papier)}
 .luna{background:#fff}
 .poradnik{background:var(--papier)}
+
+/* 26.10: wiecej koloru (cieple, nasycone tla), wyrazne cyfry telefonu, meble i dekoracje */
+:root{
+  --krem:#fbf2e6;
+  --morela:#f5dcc0;
+  --szafran:#f6e0b0;
+  --roz:#f5d9cf;
+  --szalwia:#e1e5cf;
+  --terakota:#9f3a24;
+  --bordo:#6e1c1a;
+  --jasny-na-ciemnym:#fff2e4;
+  --nr:"Inter","Segoe UI",Roboto,Arial,sans-serif;
+}
+body{background:var(--krem)}
+.nr{font-family:var(--nr)!important;font-variant-numeric:tabular-nums lining-nums;font-feature-settings:"tnum" 1,"lnum" 1;letter-spacing:.01em;font-weight:600}
+.top{background:rgba(251,242,230,.96);border-bottom-color:#ead8c2}
+.btn{background:var(--akcent)}
+.btn:hover{background:var(--akcent-c)}
+.hero::before{background:linear-gradient(160deg,#f9e8d3 0%,#f3d2b0 100%)}
+.kategorie{background:var(--krem)}
+.chipy a{background:#fff;border-color:#e6d4bf}
+.chipy a:hover{background:var(--morela);border-color:var(--akcent)}
+
+/* meble - sekcja w kolorze terakoty */
+.meble{background:var(--terakota);color:var(--jasny-na-ciemnym)}
+.meble .naglowek p{color:#f7dfcc}
+.meble .link{color:var(--jasny-na-ciemnym)}
+.meble .link:hover{color:#ffd9a8}
+.meble .kafel{background:#7f2c1b}
+.meble .naglowek{margin-bottom:clamp(28px,3.4vw,44px)}
+
+/* lista produktow mebli i dekoracji */
+.dek-lista{background:var(--roz);padding-top:clamp(56px,6vw,88px)}
+.dek-rzad+.dek-rzad{margin-top:clamp(44px,5vw,68px)}
+.dek-rzad{scroll-margin-top:calc(var(--top) + 16px)}
+.dek-rzad-gl{display:flex;align-items:baseline;justify-content:space-between;gap:12px 24px;flex-wrap:wrap}
+.dek-rzad-gl h3{font-family:var(--serif);font-size:clamp(26px,2.4vw,34px);line-height:1.15}
+.dek-rzad-gl h3 span{font:400 15px/1.4 var(--sans);color:#7a5a50;margin-left:10px;white-space:nowrap}
+.dek-rzad-gl .ster{display:flex;gap:8px;margin-left:auto}
+.dek-rzad-gl .ster+.link{margin-left:0}
+.ster button{width:44px;height:44px;border:1px solid #c99d8f;background:#fff8f3;cursor:pointer;display:grid;place-items:center;transition:background .2s,border-color .2s}
+.ster button:hover{background:#fff;border-color:var(--akcent)}
+.ster button:disabled{opacity:.35;cursor:default}
+.ster svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.dek-opis{margin:6px 0 20px;color:#5c4038;max-width:640px}
+.dek-tasma{display:grid;grid-auto-flow:column;grid-auto-columns:calc((100% - 4 * 18px) / 5);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;scrollbar-width:thin;scrollbar-color:#c98f80 transparent;overscroll-behavior-x:contain}
+.dek-tasma::-webkit-scrollbar{height:6px}
+.dek-tasma::-webkit-scrollbar-thumb{background:#c98f80}
+.dp{scroll-snap-align:start;text-decoration:none;display:flex;flex-direction:column;min-width:0}
+.dp-foto{display:block;aspect-ratio:1;overflow:hidden;background:#fff;margin-bottom:12px}
+.dp-foto img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.dp-foto.jasne img{object-fit:contain;padding:7%;mix-blend-mode:multiply}
+.dp:hover .dp-foto img{transform:scale(1.04)}
+.dp .marka{font-size:13.5px;color:#7a5a50}
+.dp .nazwa{font-size:16px;line-height:1.35;margin:2px 0 6px}
+.dp .cena{font-weight:500;font-size:17px;margin-top:auto}
+.dp .cena s{color:#7a5a50;font-weight:400;font-size:15px;margin-right:6px}
+.dp:hover .nazwa{color:var(--akcent)}
+
+/* pozostale sekcje w kolorze */
+.marki{background:var(--szafran);padding-top:clamp(72px,9vw,128px)}
+.marki-lista{border-top-color:#e2c58c}
+.marki-lista li:not(:last-child)::after{background:var(--akcent)}
+.kolekcja{background:var(--krem)}
+.kolekcja .prod-foto,.kolekcja .prod-foto.jasne{background:#fff;border-color:#efe0cd}
+.wyprzedaz{background:var(--morela)}
+.wyprz-linki a{border-color:#d9b38f}
+.wp-foto{background:#fff}
+.architekci{background:var(--szalwia)}
+.lista li{border-bottom-color:#c9cfb3}
+.luna{background:var(--bordo);color:var(--jasny-na-ciemnym)}
+.luna-tekst p{color:#f3d9cb}
+.cytat{border-left-color:#a3504a}
+.cytat footer,.luna .godz{color:#e8bfae}
+.tel-duzy.nr{font-size:clamp(34px,3.4vw,46px);font-weight:600;letter-spacing:.02em;color:#fff}
+.tel-duzy:hover{color:#ffd9a8}
+.kontakt-dane{margin:26px 0 0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-size:16px;line-height:1.45}
+.kontakt-dane dt{color:#e8bfae}
+.kontakt-dane dd{margin:0;min-width:0;overflow-wrap:anywhere}
+.kontakt-dane a{text-decoration:none;border-bottom:1px solid #a3504a}
+.kontakt-dane a:hover{color:#ffd9a8}
+.poradnik{background:var(--morela)}
+.wpis-foto{background:#fff}
+.stopka{background:#f3e3cf;border-top:0}
+.stopka-dol{border-top-color:#e2ccb2}
+.st-kol a.nr{font-size:18px}
+.mob{background:var(--krem)}
+.mob .mob-tel{gap:8px}
+.mob .mob-tel svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:0 0 auto}
+.mob .mob-cta{background:var(--akcent);border-color:var(--akcent)}
+
+@media (max-width:1100px){
+  .dek-tasma{grid-auto-columns:calc((100% - 3 * 16px) / 4);gap:16px}
+}
+@media (max-width:760px){
+  .dek-tasma{grid-auto-columns:44%;gap:12px;margin:0 -20px;padding:0 20px 12px;scroll-padding-inline:20px}
+  .dek-rzad-gl .ster{display:none}
+  .dek-rzad-gl h3 span{display:block;margin:2px 0 0}
+  .dek-opis{margin-bottom:16px;font-size:15px}
+  .dp .nazwa{font-size:15px}
+  .kontakt-dane{grid-template-columns:1fr;gap:2px}
+  .kontakt-dane dd{margin-bottom:10px}
+  .mob a{font-size:16px}
+}
+@media (max-width:380px){
+  .dek-tasma{margin:0 -16px;padding:0 16px 12px}
+  .mob{grid-template-columns:1.15fr 1fr}
+  .mob a{font-size:15px}
+}
+.ster[hidden]{display:none!important}
+@media (max-width:1180px) and (min-width:961px){.menu{gap:16px;font-size:14.5px}}
+@media (max-width:760px){.hero{min-height:calc(100svh - var(--top));padding-bottom:0}.hero-in{padding-bottom:clamp(18px,3.4svh,30px)}}
+@media (max-width:760px){.mob{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.mob a{min-width:0;white-space:nowrap;padding:0 6px}}
+@media (max-width:380px){.chipy{margin:0 -16px;padding:0 16px 4px}}
+.kafle-dek .kafel-duzy img{object-position:50% 80%}
+@media (max-width:760px){.dek-rzad-gl h3{flex:1 1 100%}}
